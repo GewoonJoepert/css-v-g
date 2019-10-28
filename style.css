@@ -20,37 +20,50 @@
   text-align: center;
   }
 
-.tekst:target {
-  padding-top: 90px;
-  box-sizing: border-box;
-  height: auto;
-  width: 100%;
-  display: block;
 
-}
+/* rexhnijgvftcg */
+  .tekst{
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom:
+  }
 
-  #h1 {
+  .kopje1{
+    text-align: center;
     grid-area: h1;
   }
 
+  #h1:target {
+    padding-top: 90px;
+  }
+
   #h2 {
+    text-align: center;
+    font-size: 15px;
     grid-area: h2;
   }
 
   #h3{
+    text-align: center;
+    font-size: 15px;
     grid-area: h3;
   }
 
   #h4{
+    text-align: center;
+    font-size: 15px;
     grid-area: h4;
   }
 
   #tekst {
-
     grid-area: tekst;
-    height: 700px;
+    height: auto;
     display: inline-block;
     width: 100%;
+    margin: 0 ;
   }
 
   #tekst2 {
@@ -71,7 +84,8 @@
     grid-area: tekst4;
     height: 700px;
     display: inline-block;
-    width: 100%;
+    width: 400px;
+    text-align: center;
   }
 
   h1{
@@ -113,26 +127,54 @@
     padding: 0px
   }
 
-  body{
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
+  #badges {
+    grid-area:  badges;
+    text-align: center;
   }
 
   #img {
     grid-area: img;
   }
 
+  #img-1{
+    grid-area: img-1;
+  }
+
+  #img-11 {
+    grid-area: img-11;
+  }
+
   #img1 {
     grid-area: img1;
+  }
+
+  #img1-1 {
+    grid-area: img1-1;
+  }
+  #img1-11 {
+    grid-area: img1-11;
   }
 
   #img2 {
     grid-area: img2;
   }
 
+  #img2-2 {
+    grid-area: img2-2;
+  }
+
+  #img2-22 {
+    grid-area: img2-22;
+  }
+
   #img3 {
     grid-area: img3;
+  }
+
+  body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
   }
 
   img {
@@ -189,12 +231,20 @@
 @media screen and (min-width: 720px) {
   .content{
     display: grid;
-    grid-template-areas:  "nav"
-                          "img"
-                          "tekst";
-    grid-template-rows: 10vh 90vh 1fr;
+    grid-template-areas:  "nav nav"
+                          "h1 h1"
+                          "img tekst"
+                          "h2 h2"
+                          "tekst2 img1"
+                          "h3 h3"
+                          "img2 tekst3"
+                          "h4 h4"
+                          "badges badges"
+                          "tekst4 tekst4";
+    grid-template-rows: 10vh 10vh 2fr 10vh 2fr 10vh 2fr 10vh 2fr 2fr;
+    grid-template-columns: 	1fr 1fr;
     width: 100%;
-    text-align: center;
+    text-align: center;;
   }
 }
 
@@ -202,17 +252,22 @@
 
     .content{
       display: grid;
-      grid-template-areas:  "nav nav"
-                            "h1 h1"
-                            "img tekst"
-                            "h2 h2"
-                            "tekst2 img1"
-                            "h3 h3"
-                            "img2 tekst3"
-                            "h4 h4"
-                            "tekst4 img3";
-      grid-template-rows: 10vh 10vh 2fr 10vh 2fr 10vh 2fr 10vh 2fr;
-      grid-template-columns: 	1fr 1fr;
+      grid-template-areas:  "nav nav nav"
+                            "img img-1 img-11"
+                            "h1 h1 h1"
+                            "tekst tekst tekst"
+                            "img1 img1-1 img1-11"
+                            "h2 h2 h2"
+                            "tekst2 tekst2 tekst2"
+                            "img2 img2-2 img2-22"
+                            "h3 h3 h3"
+                            "tekst3 tekst3 tekst3"
+                            "img3 img3 img3"
+                            "h4 h4 h4"
+                            "tekst4 tekst4 tekst4"
+                            "badges badges badges";
+      grid-template-rows: 10vh 90vh 10vh 1fr 90vh 10vh 1fr 90vh 10vh 1fr 90vh 10vh 1fr;
+      grid-template-columns: 	1fr 1fr 1fr;
       width: 100%;
       text-align: center;
       }
