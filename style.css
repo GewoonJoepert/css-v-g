@@ -3,26 +3,21 @@
   display: grid;
   grid-template-areas:  "nav"
                         "img"
-                        "h1"
-                        "tekst"
+                        "kopje1"
                         "img1"
-                        "h2"
-                        "tekst2"
+                        "kopje2"
                         "img2"
-                        "h3"
-                        "tekst3"
-                        "img3"
-                        "h4"
-                        "tekst4";
-  grid-template-rows: 10vh 90vh 10vh 1fr 90vh 10vh 1fr 90vh 10vh 1fr 90vh 10vh 1fr;
+                        "kopje3"
+                        "kopje4"
+                        "badges";
+  grid-template-rows: 10vh 90vh auto 90vh auto 90vh auto auto auto;
+  grid-template-columns: auto;
   grid-gap: 20px;
-  width: 100%;
+  width: auto;
   text-align: center;
   }
 
-
-/* rexhnijgvftcg */
-  .tekst{
+   .tekst{
     box-sizing: border-box;
     height: auto;
     width: 100%;
@@ -31,14 +26,7 @@
     margin-bottom:
   }
 
-  .kopje1{
-    text-align: center;
-    grid-area: h1;
-  }
 
-  #h1:target {
-    padding-top: 90px;
-  }
 
   #h2 {
     text-align: center;
@@ -58,34 +46,57 @@
     grid-area: h4;
   }
 
-  #tekst {
-    grid-area: tekst;
-    height: auto;
-    display: inline-block;
-    width: 100%;
-    margin: 0 ;
-  }
-
-  #tekst2 {
-    grid-area: tekst2;
-    height: 700px;
-    display: inline-block;
-    width: 100%;
-  }
-
-  #tekst3 {
-    grid-area: tekst3;
-    height: 700px;
-    display: inline-block;
-    width: 100%;
-  }
-
-  #tekst4 {
-    grid-area: tekst4;
-    height: 700px;
-    display: inline-block;
-    width: 400px;
+  #kopje1{
+    box-sizing: border-box;
+    width: auto;
+    display: block;
+    margin-bottom: 0px;
     text-align: center;
+    grid-area: kopje1;
+
+  }
+
+  #kopje1:target {
+    padding-top: 90px;
+  }
+
+  #kopje2 {
+    grid-area: kopje2;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  #kopje2:target {
+    padding-top: 90px;
+  }
+
+  #kopje3 {
+    grid-area: kopje3;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  #kopje3:target {
+    padding-top: 90px;
+  }
+
+  #kopje4 {
+    grid-area: kopje4;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  #kopje4:target {
+    padding-top: 90px;
   }
 
   h1{
@@ -232,17 +243,13 @@
   .content{
     display: grid;
     grid-template-areas:  "nav nav"
-                          "h1 h1"
-                          "img tekst"
-                          "h2 h2"
-                          "tekst2 img1"
-                          "h3 h3"
-                          "img2 tekst3"
-                          "h4 h4"
-                          "badges badges"
-                          "tekst4 tekst4";
-    grid-template-rows: 10vh 10vh 2fr 10vh 2fr 10vh 2fr 10vh 2fr 2fr;
-    grid-template-columns: 	1fr 1fr;
+                          "img kopje1"
+                          "kopje2 img1"
+                          "img2 kopje3"
+                          "kopje4 kopje4"
+                          "badges badges";
+    grid-template-rows: 10vh auto auto auto auto auto;
+    grid-template-columns: 	auto auto;
     width: 100%;
     text-align: center;;
   }
@@ -254,22 +261,17 @@
       display: grid;
       grid-template-areas:  "nav nav nav"
                             "img img-1 img-11"
-                            "h1 h1 h1"
-                            "tekst tekst tekst"
+                            "kopje1 kopje1 kopje1"
                             "img1 img1-1 img1-11"
-                            "h2 h2 h2"
-                            "tekst2 tekst2 tekst2"
+                            "kopje2 kopje2 kopje2"
                             "img2 img2-2 img2-22"
-                            "h3 h3 h3"
-                            "tekst3 tekst3 tekst3"
-                            "img3 img3 img3"
-                            "h4 h4 h4"
-                            "tekst4 tekst4 tekst4"
+                            "kopje3 kopje3 kopje3"
+                            "kopje4 kopje4 kopje4"
                             "badges badges badges";
-      grid-template-rows: 10vh 90vh 10vh 1fr 90vh 10vh 1fr 90vh 10vh 1fr 90vh 10vh 1fr;
+      grid-template-rows: 10vh 90vh auto 90vh auto 90vh auto auto 1fr;
       grid-template-columns: 	1fr 1fr 1fr;
       width: 100%;
       text-align: center;
+      height: auto;
       }
-    }
 }
