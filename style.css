@@ -14,7 +14,7 @@
   grid-template-columns: auto;
   grid-gap: 20px;
   width: auto;
-  text-align: center;
+  text-align: left;
   }
 
    .tekst{
@@ -22,11 +22,9 @@
     height: auto;
     width: 100%;
     display: block;
-    text-align: center;
+    text-align: left;
     margin-bottom:
   }
-
-
 
   #h2 {
     text-align: center;
@@ -50,8 +48,10 @@
     box-sizing: border-box;
     width: auto;
     display: block;
-    margin-bottom: 0px;
-    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    margin-top: 2%;
     grid-area: kopje1;
 
   }
@@ -63,10 +63,12 @@
   #kopje2 {
     grid-area: kopje2;
     box-sizing: border-box;
-    width: 100%;
+    width: auto;
     display: block;
-    margin-bottom: 0px;
-    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    margin-top: 2%;
   }
 
   #kopje2:target {
@@ -76,10 +78,12 @@
   #kopje3 {
     grid-area: kopje3;
     box-sizing: border-box;
-    width: 100%;
+    width: auto;
     display: block;
-    margin-bottom: 0px;
-    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    margin-top: 2%;
   }
 
   #kopje3:target {
@@ -89,10 +93,12 @@
   #kopje4 {
     grid-area: kopje4;
     box-sizing: border-box;
-    width: 100%;
+    width: auto;
     display: block;
-    margin-bottom: 0px;
-    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    margin-top: 2%;
   }
 
   #kopje4:target {
@@ -135,7 +141,7 @@
 
   * {
     margin: 0px;
-    padding: 0px
+    padding: 0px;
   }
 
   #badges {
@@ -208,7 +214,7 @@
 
   p {
     background-color: white;
-    text-align: center;
+    text-align: left;
   }
 
   html {
@@ -217,27 +223,27 @@
     scroll-behavior: smooth;
   }
 
-#navbar {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  z-index: 500;
-  margin: 0;
-  padding: 0;
-}
+  #navbar {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+    margin: 0;
+    padding: 0;
+  }
 
-#navbar a {
-  float: left;
-  display: block;
-  text-align: center;
-  width: 100%;
-  text-decoration: none;
-}
+  #navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+  }
 
-#navbar a:hover {
-  background-color: #4CAF50;
-  color: white;
-}
+  #navbar a:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
 
 @media screen and (min-width: 720px) {
   .content{
@@ -251,7 +257,7 @@
     grid-template-rows: 10vh auto auto auto auto auto;
     grid-template-columns: 	auto auto;
     width: 100%;
-    text-align: center;;
+    text-align: center;
   }
 }
 
@@ -270,8 +276,9 @@
                             "badges badges badges";
       grid-template-rows: 10vh 90vh auto 90vh auto 90vh auto auto 1fr;
       grid-template-columns: 	1fr 1fr 1fr;
+      grid-gap: 10px;
       width: 100%;
-      text-align: center;
       height: auto;
+      text-align: left;
       }
 }
